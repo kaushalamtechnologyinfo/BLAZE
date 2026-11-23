@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#ffffff" />
+  <!-- Outer navy flange ring -->
+  <circle cx="50" cy="50" r="37" fill="none" stroke="#1b3154" stroke-width="18" />
+  <!-- Top-right orange segment (approx -68deg to -28deg) -->
+  <path d="M 63.8 15.7 A 37 37 0 0 1 82.7 32.6" fill="none" stroke="#f5841f" stroke-width="18.4" />
+  <!-- White radial separators around orange segment -->
+  <line x1="50" y1="50" x2="68" y2="5" stroke="#ffffff" stroke-width="2.4" />
+  <line x1="50" y1="50" x2="92" y2="27" stroke="#ffffff" stroke-width="2.4" />
+  <!-- Inner grey ring -->
+  <circle cx="50" cy="50" r="22.5" fill="none" stroke="#66686a" stroke-width="4.5" />
+  <!-- White center bore -->
+  <circle cx="50" cy="50" r="20.2" fill="#ffffff" />
+  <!-- Bolt holes on navy section (10 holes at 30deg intervals, skipping top-right orange wedge) -->
+  <g fill="#ffffff">
+    <circle cx="50" cy="13" r="3.8" />
+    <circle cx="31.5" cy="18" r="3.8" />
+    <circle cx="18" cy="31.5" r="3.8" />
+    <circle cx="13" cy="50" r="3.8" />
+    <circle cx="18" cy="68.5" r="3.8" />
+    <circle cx="31.5" cy="82" r="3.8" />
+    <circle cx="50" cy="87" r="3.8" />
+    <circle cx="68.5" cy="82" r="3.8" />
+    <circle cx="82" cy="68.5" r="3.8" />
+    <circle cx="87" cy="50" r="3.8" />
+  </g>
+</svg>

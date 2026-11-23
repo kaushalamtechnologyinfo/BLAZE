@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blazetech Engineering — Website & Admin CMS
+
+Complete Next.js (App Router) + Tailwind CSS website and built-in Admin CMS for **Blazetech Engineering**, populated with all content, products, news updates, gallery photos, FAQs, custom pages, and PDF brochure from `blazetechengineering.in`.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Website:** `http://localhost:3000`
+- **Admin Panel:** `http://localhost:3000/admin`
+- **Default Admin Login:** `admin` / `admin123`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To change the admin credentials, copy `.env.example` to `.env.local` and set `ADMIN_USER`, `ADMIN_PASSWORD`, and `ADMIN_SECRET`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Public Website:**
+  - Modern industrial design matched to Blazetech's Navy (`#12213b`) & Orange (`#f5841f`) brand identity
+  - Full product catalogue (24 products across 4 categories) with search, category filtering, structured specifications, and per-product enquiry forms
+  - Latest News / Updates (112 articles) with pagination, search, and keyword filtering
+  - Interactive Image Gallery with full-screen lightbox
+  - Embedded PDF Product Brochure viewer & download
+  - FAQ page with FAQPage JSON-LD schema, Contact page with Google Maps & Quote form, Custom SEO pages, and floating WhatsApp / Call actions
+- **Admin CMS (`/admin`):**
+  - Dashboard with live counts and unread enquiry alerts
+  - Full CRUD for **Products**, **Categories**, **Latest News**, **Gallery**, **Custom Pages**, **FAQs**, **Enquiries**, **Newsletter Subscribers** (with CSV export), and **Site Settings**
+  - Direct image & PDF upload stored locally in `public/uploads/`
+  - All data persisted in `data/site.json` (zero external database required)
